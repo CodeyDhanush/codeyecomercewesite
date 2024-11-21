@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Buyer Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="seller_dashboard.html">Seller</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2>Filter Products Nearby</h2>
+            <form id="location-form">
+                <input type="number" id="max-distance" placeholder="Max Distance (KM)" required>
+                <button type="submit">Filter</button>
+            </form>
+        </section>
+
+        <section class="products-section">
+            <h2>Available Products</h2>
+            <div id="products-list" class="products-list">
+                <!-- Dynamic product cards will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fruits & Vegetables Store</p>
+    </footer>
+</body>
+</html>
